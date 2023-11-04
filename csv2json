@@ -8,6 +8,16 @@ json_file = 'data.json'
 # Initialize an empty list to store the data
 data = []
 
+son_file = 'data.json'
+
+# Initialize an empty list to store the data
+data = []
+
+# Read the CSV file and convert it to a list of dictionaries
+with open(csv_file, 'r') as csv_file:
+    csv_reader = csv.DictReader(csv_file)
+    for row in csv_reader:
+
 # Read the CSV file and convert it to a list of dictionaries
 with open(csv_file, 'r') as csv_file:
     csv_reader = csv.DictReader(csv_file)
