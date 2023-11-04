@@ -9,6 +9,16 @@ def subtract(x, y):
 # Function to perform multiplication
 def multiply(x, y):
     return x * y
+# Main calculator loop
+while True:
+    print("Options:")
+    print("Enter 'add' for addition")
+    print("Enter 'subtract' for subtraction")
+    print("Enter 'multiply' for multiplication")
+    print("Enter 'divide' for division")
+    print("Enter 'quit' to end the program")
+
+    user_input = input(": ")
 
 # Function to perform division
 def divide(x, y):
@@ -32,6 +42,15 @@ while True:
     elif user_input in ("add", "subtract", "multiply", "divide"):
         num1 = float(input("Enter first number: "))
         num2 = float(input("Enter second number: "))
+
+    if user_input == "quit":
+        break
+    elif user_input in ("add", "subtract", "multiply", "divide"):
+        num1 = float(input("Enter first number: "))
+        num2 = float(input("Enter second number: "))
+
+        if user_input == "add":
+            print("Result:", add(num
 
         if user_input == "add":
             print("Result:", add(num1, num2))
