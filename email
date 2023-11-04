@@ -13,6 +13,15 @@ message = 'This is a simple email sent from Python.'
 msg = MIMEMultipart()
 msg['From'] = sender_email
 msg['To'] = receiver_email
+
+# Create a MIMEText object to represent the email message
+msg = MIMEMultipart()
+msg['From'] = sender_email
+msg['To'] = receiver_email
+msg['Subject'] = subject
+msg.attach(MIMEText(message, 'plain'))
+
+# Connect to the SMTP server (in this example, we're
 msg['Subject'] = subject
 msg.attach(MIMEText(message, 'plain'))
 
@@ -24,6 +33,13 @@ try:
     server = smtplib.SMTP(smtp_server, smtp_port)
     server.starttls()
     server.login(sender_email, password)
+   server = smtplib.SMTP(smtp_server, smtp_port)
+    server.starttls()
+    server.login(sender_email, password)
+
+    # Send the email
+    server.sendmail(sender_email, receiver_email, msg.as_string())
+    print('Email sent successfully')
 
     # Send the email
     server.sendmail(sender_email, receiver_email, msg.as_string())
