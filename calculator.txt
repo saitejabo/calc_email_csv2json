@@ -5,12 +5,69 @@ def add(x, y):
 # Function to perform subtraction
 def subtract(x, y):
     return x - y
+return x + y
 
+# Function to perform subtraction
+def subtract(x, y):
+    return x - y
+# Main calculator loop
+while True:
+    print("Options:")
+##########hwllowkjskdjasplfj
+
+    print("Enter 'add' for addition")
+    print("Enter 'subtract' for subtraction")
+    print("Enter 'multiply' for multiplication")
+    print("Enter 'divide' for division")
+############jdkjfksajeu
+    print("Enter 'quit' to end the program")
+
+    user_input = input(": ")
+
+    if user_input == "quit":
+        break
 # Function to perform multiplication
 def multiply(x, y):
     return x * y
 
 # Function to perform division
+int("Enter 'add' for addition")
+    print("Enter 'subtract' for subtraction")
+    print("Enter 'multiply' for multiplication")
+    print("Enter 'divide' for division")
+############jdkjfksajeu
+    print("Enter 'quit' to end the program")
+
+    user_input = input(": ")
+
+    if user_input == "quit":
+        break
+# Function to perform multiplication
+def multiply(x, y):
+    return x * y
+
+# Function to perform division
+def divide(x, y):
+    if y == 0:
+        return "Cannot divide by zero"
+    return x / y
+
+# Main calculator loop
+while True:
+    print("Options:")
+    print("Enter 'add' for addition")
+    print("Enter 'subtract' for subtraction")
+    print("Enter 'multiply' for multiplication")
+    print("Enter 'divide' for division")
+    print("Enter 'quit' to end the program")
+
+    user_input = input(": ")
+
+    if user_input == "quit":
+        break
+    elif user_input in ("add", "subtract", "multiply", "divide"):
+        num1 = float(input("Enter first number: "))
+        num2 = float(input("Enter second numb
 def divide(x, y):
     if y == 0:
         return "Cannot divide by zero"
