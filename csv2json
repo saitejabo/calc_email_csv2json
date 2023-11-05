@@ -1,18 +1,3 @@
- CSV file and output JSON file names
-csv_file = 'data.csv'
-json_file = 'data.json'
-
-# Initialize an empty list to store the data
-data = []
-
-# Read the CSV file and convert it to a list of dictionaries
-with open(csv_file, 'r') as csv_file:
-    csv_reader = csv.DictReader(csv_file)
-    for row in csv_reader:
-        data.append(row)
-
-# Write the list of dictionaries to a JS
-
 import csv
 import json
 
@@ -22,6 +7,16 @@ json_file = 'data.json'
 
 # Initialize an empty list to store the data
 data = []
+
+son_file = 'data.json'
+
+# Initialize an empty list to store the data
+data = []
+
+# Read the CSV file and convert it to a list of dictionaries
+with open(csv_file, 'r') as csv_file:
+    csv_reader = csv.DictReader(csv_file)
+    for row in csv_reader:
 
 # Read the CSV file and convert it to a list of dictionaries
 with open(csv_file, 'r') as csv_file:
@@ -33,5 +28,4 @@ with open(csv_file, 'r') as csv_file:
 with open(json_file, 'w') as json_file:
     json.dump(data, json_file, indent=4)
 
-print(f'CSV data from {csv_file} has been converted to JSON and saved in {json_file}.')ON f
-
+print(f'CSV data from {csv_file} has been converted to JSON and saved in {json_file}.')
